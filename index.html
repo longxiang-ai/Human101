@@ -1,0 +1,604 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <!-- Meta tags for social media banners, these should be filled in appropriatly as they are your "business card" -->
+  <!-- Replace the content tag with appropriate information -->
+  <meta name="description" content="DESCRIPTION META TAG">
+  <meta property="og:title" content="SOCIAL MEDIA TITLE TAG"/>
+  <meta property="og:description" content="SOCIAL MEDIA DESCRIPTION TAG TAG"/>
+  <meta property="og:url" content="URL OF THE WEBSITE"/>
+  <!-- Path to banner image, should be in the path listed below. Optimal dimenssions are 1200X630-->
+  <meta property="og:image" content="static/image/your_banner_image.png" />
+  <meta property="og:image:width" content="1200"/>
+  <meta property="og:image:height" content="630"/>
+
+
+  <meta name="twitter:title" content="TWITTER BANNER TITLE META TAG">
+  <meta name="twitter:description" content="TWITTER BANNER DESCRIPTION META TAG">
+  <!-- Path to banner image, should be in the path listed below. Optimal dimenssions are 1200X600-->
+  <meta name="twitter:image" content="static/images/your_twitter_banner_image.png">
+  <meta name="twitter:card" content="summary_large_image">
+  <!-- Keywords for your paper to be indexed by-->
+  <meta name="keywords" content="KEYWORDS SHOULD BE PLACED HERE">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+
+  <title>Human101</title>
+  <link rel="icon" type="image/x-icon" href="static/images/standing-human-body-silhouette.png">
+  <link href="https://fonts.googleapis.com/css?family=Google+Sans|Noto+Sans|Castoro"
+  rel="stylesheet">
+
+  <link rel="stylesheet" href="static/css/bulma.min.css">
+  <link rel="stylesheet" href="static/css/bulma-carousel.min.css">
+  <link rel="stylesheet" href="static/css/bulma-slider.min.css">
+  <link rel="stylesheet" href="static/css/fontawesome.all.min.css">
+  <link rel="stylesheet"
+  href="https://cdn.jsdelivr.net/gh/jpswalsh/academicons@1/css/academicons.min.css">
+  <link rel="stylesheet" href="static/css/index.css">
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://documentcloud.adobe.com/view-sdk/main.js"></script>
+  <script defer src="static/js/fontawesome.all.min.js"></script>
+  <script src="static/js/bulma-carousel.min.js"></script>
+  <script src="static/js/bulma-slider.min.js"></script>
+  <script src="static/js/index.js"></script>
+</head>
+<body>
+
+
+  <section class="hero">
+    <div class="hero-body">
+      <div class="container is-max-desktop">
+        <div class="columns is-centered">
+          <div class="column has-text-centered">
+            <h1 class="title is-1 publication-title">Human101: Training 100+FPS Human Gaussians in 100s from 1 View</h1>
+            <div class="is-size-5 publication-authors">
+              <!-- Paper authors -->
+              <span class="author-block">
+                <a href="https://github.com/longxiang-ai" target="_blank">Mingwei Li</a>,</span>
+                <span class="author-block">
+                  <a href="https://github.com/tlxhlll" target="_blank">Jiachen Tao</a>,</span>
+                  <span class="author-block">
+                    <a href="https://z-x-yang.github.io" target="_blank">Zongxin Yang</a>,
+                  </span>
+                  <span class="author-block">
+                    <a href="https://scholar.google.com/citations?user=RMSuNFwAAAAJ" target="_blank">Yi Yang</a><sup>*</sup>
+                  </span>
+                  </div>
+
+                  <div class="is-size-5 publication-authors">
+                    <span class="author-block">ReLER, CCAI, Zhejiang University<br>Arxiv 2023</span>
+                    <span class="eql-cntrb"><small><br><sup>*</sup>Corresponding Author</small></span>
+                  </div>
+
+                  <div class="column has-text-centered">
+                    <div class="publication-links">
+                         <!-- Arxiv PDF link -->
+                      <span class="link-block">
+                        <a href="https://tlxhlll.github.io/Human101-projectpage/" target="_blank"
+                        class="external-link button is-normal is-rounded is-dark">
+                        <span class="icon">
+                          <i class="fas fa-file-pdf"></i>
+                        </span>
+                        <span>Paper(coming soon)</span>
+                      </a>
+                    </span>
+
+                    <!-- Supplementary PDF link -->
+                    <span class="link-block">
+                      <a href="https://tlxhlll.github.io/Human101-projectpage/" target="_blank"
+                      class="external-link button is-normal is-rounded is-dark">
+                      <span class="icon">
+                        <i class="fas fa-file-pdf"></i>
+                      </span>
+                      <span>Supplementary(coming soon)</span>
+                    </a>
+                  </span>
+
+                  <!-- Github link -->
+                  <span class="link-block">
+                    <a href="https://github.com/longxiang-ai/Human101" target="_blank"
+                    class="external-link button is-normal is-rounded is-dark">
+                    <span class="icon">
+                      <i class="fab fa-github"></i>
+                    </span>
+                    <span>Code(coming soon)</span>
+                  </a>
+                </span>
+
+                <!-- ArXiv abstract Link -->
+                <span class="link-block">
+                  <a href="https://tlxhlll.github.io/Human101-projectpage" target="_blank"
+                  class="external-link button is-normal is-rounded is-dark">
+                  <span class="icon">
+                    <i class="ai ai-arxiv"></i>
+                  </span>
+                  <span>arXiv(coming soon)</span>
+                </a>
+              </span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+<!-- Teaser image-->
+<section class="hero teaser">
+  <div class="container is-max-desktop">
+    <div class="hero-body">
+      <!-- 保持 <img> 标签不变 -->
+      <img src="static/images/teaser(21).png" id="tree" autoplay controls muted loop height="100%" alt="Teaser Image">
+      <!-- 修改 <h2> 标签，移除居中文本的类 -->
+      <h2 class="subtitle">
+        <b>One VR common use-case.</b> (a) The user captures a short monocular video and proceeds to upload it. (b) Our model automatically selects four frames from the monocular video and after an initialization process, we can obtain an initial point cloud. (c) Our model can learn in minutes to get a dynamic human representation. (d) Our model achieves comparable or better visual quality while rendering much faster than previous works. LPIPS* = LPIPS &times; 10<sup>3</sup>. The area of each circle is proportional to the training time required, with larger areas representing longer training durations.
+      </h2>
+    </div>
+  </div>
+</section>
+
+
+<!-- End teaser video -->
+
+<!-- Paper abstract -->
+<section class="section hero is-light">
+  <div class="container is-max-desktop">
+    <div class="columns is-centered has-text-centered">
+      <div class="column is-four-fifths">
+        <h2 class="title is-3">Abstract</h2>
+        <div class="content has-text-justified">
+          <p>
+            Reconstructing the human body from single-view videos plays a pivotal role in the virtual reality domain. One prevalent application scenario necessitates the rapid reconstruction of high-fidelity 3D digital humans while simultaneously ensuring real-time rendering and interaction. Existing methods often struggle to fulfill both requirements. In this paper, we introduce Human101, a novel framework adept at producing high-fidelity dynamic 3D human reconstructions from 1-view videos by training 3D Gaussians in 100 seconds and rendering in 100+ FPS. Our method leverages the strengths of 3D Gaussian Splatting, which provides an explicit and efficient representation of 3D humans. Standing apart from prior NeRF-based systems, Human101 ingeniously applies a Human-centric Forward Gaussian Animation to deform the parameters of 3D Gaussians, thereby enhancing rendering speed (i.e., rendering 1024-resolution images at an impressive 60+ FPS and rendering 512-resolution images at 100+ FPS). Experimental results indicate that our approach substantially eclipses current methods, clocking up to a 10 × surge in frames per second and delivering comparable or superior rendering quality. Code and demos will be released at <a href="https://github.com/longxiang-ai/Human101" style="color: blue;">https://github.com/longxiang-ai/Human101</a>.
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<!-- End paper abstract -->
+
+<!-- Pipeline image-->
+<section class="hero Pipeline" style="margin-top: 50px;"> <!-- 增加了 50px 的上边距 -->
+  <div class="container is-max-desktop">
+    <div class="hero-body">
+      <!-- 添加居中的标题 -->
+      <h1 class="title has-text-centered">Pipeline</h1>
+      <!-- 保持 <img> 标签不变 -->
+      <img src="static/images/pipeline(7).png" id="tree" autoplay controls muted loop height="100%" alt="Pipeline Image">
+      <!-- 修改 <h2> 标签，移除居中文本的类 -->
+      <h2 class="subtitle">
+        <b>Overview of Human101.</b>
+        <b>(a) Canonical Human Initialization.</b> We use an offline model to extract 4 point cloud parts from 4 selected frames, and fuse them into a canonical point cloud, which then is converted into canonical Gaussians.
+        <b>(b) Human-centric Gaussian Forward Animation.</b> We deform canonical 3D Gaussians into the target pose by modifying Gaussian positions (x), rotations (r), and scales (s). And we rotate the spherical coefficients with triangle face rotation.
+        <b>(c) Human-centric Gaussian Refinement.</b> We refine positions (x), rotations (r) and scales (s) of Gaussians and refine the view direction (d) of spherical harmonics.
+      </h2>        
+    </div>
+  </div>
+</section>
+<!-- End Pipeline image-->
+
+
+
+
+
+<section class="hero is-small is-light">
+  <div class="hero-body">
+    <div class="container">
+      <!-- Paper video. -->
+      <h2 class="title is-3">Training View Results</h2>
+      
+      <!-- 标签名称 -->
+      <div class="columns is-centered has-text-centered">
+        <div class="column is-four-fifths">
+          <div style="display: grid; grid-template-columns: repeat(3, 1fr); grid-gap: 20px; text-align: center;">
+            <div><strong>GT</strong></div>
+            <div><strong>Ours</strong></div>
+            <div><strong>InstantNvr</strong></div>
+          </div>
+        </div>
+      </div>
+
+      
+      <!-- 视频 -->
+      <div class="columns is-centered has-text-centered">
+        <div class="column is-four-fifths">
+          <div class="novel-view-video" style="display: grid; grid-template-columns: repeat(3, 1fr); grid-gap: 20px;">
+            <!-- 重复27次 video 标签以形成九行三列 -->
+            <!-- 以下是第一行视频的示例 -->
+            <video width="100%" height="auto" controls autoplay loop muted>
+              <source src="static/videos/overfitting_videos/gt_video/377_gt_h264.mp4" type="video/mp4">
+            </video>
+            <video width="100%" height="auto" controls autoplay loop muted>
+              <source src="static/videos/overfitting_videos/ours/377_overfitting_h264.mp4" type="video/mp4">
+            </video>
+            <video width="100%" height="auto" controls autoplay loop muted>
+              <source src="static/videos/overfitting_videos/nvr/377_video_h264.mp4" type="video/mp4">
+            </video>
+            <video width="100%" height="auto" controls autoplay loop muted>
+              <source src="static/videos/overfitting_videos/gt_video/394_gt_h264.mp4" type="video/mp4">
+            </video>
+            <video width="100%" height="auto" controls autoplay loop muted>
+              <source src="static/videos/overfitting_videos/ours/394_overfitting_h264.mp4" type="video/mp4">
+            </video>
+            <video width="100%" height="auto" controls autoplay loop muted>
+              <source src="static/videos/overfitting_videos/nvr/394_video_h264.mp4" type="video/mp4">
+            </video>
+            <video width="100%" height="auto" controls autoplay loop muted>
+              <source src="static/videos/overfitting_videos/gt_video/386_gt_h264.mp4" type="video/mp4">
+            </video>
+            <video width="100%" height="auto" controls autoplay loop muted>
+              <source src="static/videos/overfitting_videos/ours/386_overfitting_h264.mp4" type="video/mp4">
+            </video>
+            <video width="100%" height="auto" controls autoplay loop muted>
+              <source src="static/videos/overfitting_videos/nvr/386_video_h264.mp4" type="video/mp4">
+            </video>
+            <video width="100%" height="auto" controls autoplay loop muted>
+              <source src="static/videos/overfitting_videos/gt_video/387_gt_h264.mp4" type="video/mp4">
+            </video>
+            <video width="100%" height="auto" controls autoplay loop muted>
+              <source src="static/videos/overfitting_videos/ours/387_overfitting_h264.mp4" type="video/mp4">
+            </video>
+            <video width="100%" height="auto" controls autoplay loop muted>
+              <source src="static/videos/overfitting_videos/nvr/387_video_h264.mp4" type="video/mp4">
+            </video>
+            <video width="100%" height="auto" controls autoplay loop muted>
+              <source src="static/videos/overfitting_videos/gt_video/392_gt_h264.mp4" type="video/mp4">
+            </video>
+            <video width="100%" height="auto" controls autoplay loop muted>
+              <source src="static/videos/overfitting_videos/ours/392_overfitting_h264.mp4" type="video/mp4">
+            </video>
+            <video width="100%" height="auto" controls autoplay loop muted>
+              <source src="static/videos/overfitting_videos/nvr/392_video_h264.mp4" type="video/mp4">
+            </video>
+            <video width="100%" height="auto" controls autoplay loop muted>
+              <source src="static/videos/overfitting_videos/gt_video/393_gt_h264.mp4" type="video/mp4">
+            </video>
+            <video width="100%" height="auto" controls autoplay loop muted>
+              <source src="static/videos/overfitting_videos/ours/393_overfitting_h264.mp4" type="video/mp4">
+            </video>
+            <video width="100%" height="auto" controls autoplay loop muted>
+              <source src="static/videos/overfitting_videos/nvr/393_video_h264.mp4" type="video/mp4">
+            </video>
+            <video width="100%" height="auto" controls autoplay loop muted>
+              <source src="static/videos/overfitting_videos/gt_video/lan_gt_h264.mp4" type="video/mp4">
+            </video>
+            <video width="100%" height="auto" controls autoplay loop muted>
+              <source src="static/videos/overfitting_videos/ours/lan_overfitting_h264.mp4" type="video/mp4">
+            </video>
+            <video width="100%" height="auto" controls autoplay loop muted>
+              <source src="static/videos/overfitting_videos/nvr/lan_video_h264.mp4" type="video/mp4">
+            </video>
+            <video width="100%" height="auto" controls autoplay loop muted>
+              <source src="static/videos/overfitting_videos/gt_video/marc_gt_h264.mp4" type="video/mp4">
+            </video>
+            <video width="100%" height="auto" controls autoplay loop muted>
+              <source src="static/videos/overfitting_videos/ours/marc_overfitting_h264.mp4" type="video/mp4">
+            </video>
+            <video width="100%" height="auto" controls autoplay loop muted>
+              <source src="static/videos/overfitting_videos/nvr/marc_video_h264.mp4" type="video/mp4">
+            </video>
+            <video width="100%" height="auto" controls autoplay loop muted>
+              <source src="static/videos/overfitting_videos/gt_video/olek_gt_h264.mp4" type="video/mp4">
+            </video>
+            <video width="100%" height="auto" controls autoplay loop muted>
+              <source src="static/videos/overfitting_videos/ours/olek_overfitting_h264.mp4" type="video/mp4">
+            </video>
+            <video width="100%" height="auto" controls autoplay loop muted>
+              <source src="static/videos/overfitting_videos/nvr/olek_video_h264.mp4" type="video/mp4">
+            </video>
+            <video width="100%" height="auto" controls autoplay loop muted>
+              <source src="static/videos/overfitting_videos/gt_video/vlad_gt_h264.mp4" type="video/mp4">
+            </video>
+            <video width="100%" height="auto" controls autoplay loop muted>
+              <source src="static/videos/overfitting_videos/ours/vlad_overfitting_h264.mp4" type="video/mp4">
+            </video>
+            <video width="100%" height="auto" controls autoplay loop muted>
+              <source src="static/videos/overfitting_videos/nvr/vlad_video_h264.mp4" type="video/mp4">
+            </video>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="hero is-small is-light">
+  <div class="hero-body">
+    <div class="container">
+      <!-- Paper video. -->
+      <h2 class="title is-3">Novel View Results</h2>
+      
+      <!-- 标签名称 -->
+      <div class="columns is-centered has-text-centered">
+        <div class="column is-four-fifths">
+          <div style="display: grid; grid-template-columns: repeat(3, 1fr); grid-gap: 20px; text-align: center;">
+            <div><strong>GT</strong></div>
+            <div><strong>Ours</strong></div>
+            <div><strong>InstantNvr</strong></div>
+          </div>
+        </div>
+      </div>
+      <!-- 视频 -->
+      <div class="columns is-centered has-text-centered">
+        <div class="column is-four-fifths">
+          <div class="novel-view-video" style="display: grid; grid-template-columns: repeat(3, 1fr); grid-gap: 20px;">
+            <!-- 重复27次 video 标签以形成九行三列 -->
+            <!-- 以下是第一行视频的示例 -->
+            <video width="100%" height="auto" controls autoplay loop muted>
+              <source src="static/videos/novel_view_videos/gt_videos/377_0_h264.mp4" type="video/mp4">
+            </video>
+            <video width="100%" height="auto" controls autoplay loop muted>
+              <source src="static/videos/novel_view_videos/ours/377_0_h264.mp4" type="video/mp4">
+            </video>
+            <video width="100%" height="auto" controls autoplay loop muted>
+              <source src="static/videos/novel_view_videos/nvr/377_view0000_video_h264.mp4" type="video/mp4">
+            </video>
+            <video width="100%" height="auto" controls autoplay loop muted>
+              <source src="static/videos/novel_view_videos/gt_videos/377_10_h264.mp4" type="video/mp4">
+            </video>
+            <video width="100%" height="auto" controls autoplay loop muted>
+              <source src="static/videos/novel_view_videos/ours/377_10_h264.mp4" type="video/mp4">
+            </video>
+            <video width="100%" height="auto" controls autoplay loop muted>
+              <source src="static/videos/novel_view_videos/nvr/377_view0010_video_h264.mp4" type="video/mp4">
+            </video>
+            <video width="100%" height="auto" controls autoplay loop muted>
+              <source src="static/videos/novel_view_videos/gt_videos/377_16_h264.mp4" type="video/mp4">
+            </video>
+            <video width="100%" height="auto" controls autoplay loop muted>
+              <source src="static/videos/novel_view_videos/ours/377_16_h264.mp4" type="video/mp4">
+            </video>
+            <video width="100%" height="auto" controls autoplay loop muted>
+              <source src="static/videos/novel_view_videos/nvr/377_view0016_video_h264.mp4" type="video/mp4">
+            </video>
+            <video width="100%" height="auto" controls autoplay loop muted>
+              <source src="static/videos/novel_view_videos/gt_videos/377_19_h264.mp4" type="video/mp4">
+            </video>
+            <video width="100%" height="auto" controls autoplay loop muted>
+              <source src="static/videos/novel_view_videos/ours/377_19_h264.mp4" type="video/mp4">
+            </video>
+            <video width="100%" height="auto" controls autoplay loop muted>
+              <source src="static/videos/novel_view_videos/nvr/377_view0019_video_h264.mp4" type="video/mp4">
+            </video>
+            <video width="100%" height="auto" controls autoplay loop muted>
+              <source src="static/videos/novel_view_videos/gt_videos/387_1_h264.mp4" type="video/mp4">
+            </video>
+            <video width="100%" height="auto" controls autoplay loop muted>
+              <source src="static/videos/novel_view_videos/ours/387_1_h264.mp4" type="video/mp4">
+            </video>
+            <video width="100%" height="auto" controls autoplay loop muted>
+              <source src="static/videos/novel_view_videos/nvr/387_view0001_video_h264.mp4" type="video/mp4">
+            </video>
+            <video width="100%" height="auto" controls autoplay loop muted>
+              <source src="static/videos/novel_view_videos/gt_videos/387_5_h264.mp4" type="video/mp4">
+            </video>
+            <video width="100%" height="auto" controls autoplay loop muted>
+              <source src="static/videos/novel_view_videos/ours/387_5_h264.mp4" type="video/mp4">
+            </video>
+            <video width="100%" height="auto" controls autoplay loop muted>
+              <source src="static/videos/novel_view_videos/nvr/387_view0005_video_h264.mp4" type="video/mp4">
+            </video>
+            <video width="100%" height="auto" controls autoplay loop muted>
+              <source src="static/videos/novel_view_videos/gt_videos/387_13_h264.mp4" type="video/mp4">
+            </video>
+            <video width="100%" height="auto" controls autoplay loop muted>
+              <source src="static/videos/novel_view_videos/ours/387_13_h264.mp4" type="video/mp4">
+            </video>
+            <video width="100%" height="auto" controls autoplay loop muted>
+              <source src="static/videos/novel_view_videos/nvr/387_view0013_video_h264.mp4" type="video/mp4">
+            </video>
+            <video width="100%" height="auto" controls autoplay loop muted>
+              <source src="static/videos/novel_view_videos/gt_videos/387_19_h264.mp4" type="video/mp4">
+            </video>
+            <video width="100%" height="auto" controls autoplay loop muted>
+              <source src="static/videos/novel_view_videos/ours/387_19_h264.mp4" type="video/mp4">
+            </video>
+            <video width="100%" height="auto" controls autoplay loop muted>
+              <source src="static/videos/novel_view_videos/nvr/387_view0019_video_h264.mp4" type="video/mp4">
+            </video>
+            <video width="100%" height="auto" controls autoplay loop muted>
+              <source src="static/videos/novel_view_videos/gt_videos/394_0_h264.mp4" type="video/mp4">
+            </video>
+            <video width="100%" height="auto" controls autoplay loop muted>
+              <source src="static/videos/novel_view_videos/ours/394_0_h264.mp4" type="video/mp4">
+            </video>
+            <video width="100%" height="auto" controls autoplay loop muted>
+              <source src="static/videos/novel_view_videos/nvr/394_view0000_video_h264.mp4" type="video/mp4">
+            </video>
+            <video width="100%" height="auto" controls autoplay loop muted>
+              <source src="static/videos/novel_view_videos/gt_videos/394_10_h264.mp4" type="video/mp4">
+            </video>
+            <video width="100%" height="auto" controls autoplay loop muted>
+              <source src="static/videos/novel_view_videos/ours/394_10_h264.mp4" type="video/mp4">
+            </video>
+            <video width="100%" height="auto" controls autoplay loop muted>
+              <source src="static/videos/novel_view_videos/nvr/394_view0010_video_h264.mp4" type="video/mp4">
+            </video>
+            <video width="100%" height="auto" controls autoplay loop muted>
+              <source src="static/videos/novel_view_videos/gt_videos/394_18_h264.mp4" type="video/mp4">
+            </video>
+            <video width="100%" height="auto" controls autoplay loop muted>
+              <source src="static/videos/novel_view_videos/ours/394_18_h264.mp4" type="video/mp4">
+            </video>
+            <video width="100%" height="auto" controls autoplay loop muted>
+              <source src="static/videos/novel_view_videos/nvr/394_view0018_video_h264.mp4" type="video/mp4">
+            </video>
+            <video width="100%" height="auto" controls autoplay loop muted>
+              <source src="static/videos/novel_view_videos/gt_videos/394_22_h264.mp4" type="video/mp4">
+            </video>
+            <video width="100%" height="auto" controls autoplay loop muted>
+              <source src="static/videos/novel_view_videos/ours/394_22_h264.mp4" type="video/mp4">
+            </video>
+            <video width="100%" height="auto" controls autoplay loop muted>
+              <source src="static/videos/novel_view_videos/nvr/394_view0022_video_h264.mp4" type="video/mp4">
+            </video>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+<section class="hero is-small is-light">
+  <div class="hero-body">
+    <div class="container">
+      <!-- Paper video. -->
+      <h2 class="title is-3">Bullet Time</h2>
+      
+      <!-- 标签名称 -->
+      <div class="columns is-centered has-text-centered">
+        <div class="column is-four-fifths">
+          <div style="display: grid; grid-template-columns: repeat(1, 1fr); grid-gap: 20px; text-align: center;">
+            <div><strong>Ours 377</strong></div>
+          </div>
+        </div>
+      </div>
+      <!-- 视频 -->
+      <div class="columns is-centered has-text-centered">
+        <div class="column is-four-fifths">
+          <div class="novel-view-video" style="display: grid; grid-template-columns: repeat(3, 1fr); grid-gap: 20px;">
+            <!-- 重复27次 video 标签以形成九行三列 -->
+            <!-- 以下是第一行视频的示例 -->
+            <video width="100%" height="auto" controls autoplay loop muted>
+              <source src="static/videos/overfitting_videos/bullet_time/377_bullet_video/00000_h264.mp4" type="video/mp4">
+            </video>
+            <video width="100%" height="auto" controls autoplay loop muted>
+              <source src="static/videos/overfitting_videos/bullet_time/377_bullet_video/00020_h264.mp4" type="video/mp4">
+            </video>
+            <video width="100%" height="auto" controls autoplay loop muted>
+              <source src="static/videos/overfitting_videos/bullet_time/377_bullet_video/00050_h264.mp4" type="video/mp4">
+            </video>
+            <video width="100%" height="auto" controls autoplay loop muted>
+              <source src="static/videos/overfitting_videos/bullet_time/377_bullet_video/00040_h264.mp4" type="video/mp4">
+            </video>
+            <video width="100%" height="auto" controls autoplay loop muted>
+              <source src="static/videos/overfitting_videos/bullet_time/377_bullet_video/00070_h264.mp4" type="video/mp4">
+            </video>
+            <video width="100%" height="auto" controls autoplay loop muted>
+              <source src="static/videos/overfitting_videos/bullet_time/377_bullet_video/00090_h264.mp4" type="video/mp4">
+            </video>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="hero is-small is-light">
+  <div class="hero-body">
+    <div class="container">
+      <!-- Paper video. -->
+      <h2 class="title is-3">Application: Composite Rendering</h2>
+      
+      <!-- 视频 -->
+      <div class="columns is-centered has-text-centered">
+        <div class="column is-four-fifths">
+          <div class="novel-view-video" style="display: grid; grid-template-columns: repeat(1, 1fr); grid-gap: 20px;">
+            <!-- 重复27次 video 标签以形成九行三列 -->
+            <!-- 以下是第一行视频的示例 -->
+            <video width="100%" height="auto" controls autoplay loop muted>
+              <source src="static/videos/Composite_Rendering.mp4" type="video/mp4">
+            </video>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+
+
+<!-- Video carousel -->
+<!-- <section class="hero is-small">
+  <div class="hero-body">
+    <div class="container">
+      <h2 class="title is-3">Another Carousel</h2>
+      <div id="results-carousel" class="carousel results-carousel">
+        <div class="item item-video1">
+          <video poster="" id="video1" autoplay controls muted loop height="100%">
+            Your video file here
+            <source src="static/videos/carousel1.mp4"
+            type="video/mp4">
+          </video>
+        </div>
+        <div class="item item-video2">
+          <video poster="" id="video2" autoplay controls muted loop height="100%">
+            Your video file here
+            <source src="static/videos/carousel1.mp4"
+            type="video/mp4">
+          </video>
+        </div>
+        <div class="item item-video3">
+          <video poster="" id="video3" autoplay controls muted loop height="100%">\
+            Your video file here
+            <source src="static/videos/carousel1.mp4"
+            type="video/mp4">
+          </video>
+        </div>
+      </div>
+    </div>
+  </div>
+</section> -->
+<!-- End video carousel -->
+
+
+
+
+
+
+<!-- Paper poster -->
+<!-- <section class="hero is-small is-light">
+  <div class="hero-body">
+    <div class="container">
+      <h2 class="title">Poster</h2>
+
+      <iframe  src="static/pdfs/sample.pdf" width="100%" height="550">
+          </iframe>
+        
+      </div>
+    </div>
+  </section> -->
+<!--End paper poster -->
+
+
+<!--BibTex citation -->
+  <section class="section" id="BibTeX">
+    <div class="container is-max-desktop content">
+      <h2 class="title">BibTeX</h2>
+      <pre><code>BibTex Code Here</code></pre>
+    </div>
+</section>
+<!--End BibTex citation -->
+
+
+  <footer class="footer">
+  <div class="container">
+    <div class="columns is-centered">
+      <div class="column is-8">
+        <div class="content">
+
+          <p>
+            This page was built using the <a href="https://github.com/eliahuhorwitz/Academic-project-page-template" target="_blank">Academic Project Page Template</a> which was adopted from the <a href="https://nerfies.github.io" target="_blank">Nerfies</a> project page.
+            You are free to borrow the of this website, we just ask that you link back to this page in the footer. <br> This website is licensed under a <a rel="license"  href="http://creativecommons.org/licenses/by-sa/4.0/" target="_blank">Creative
+            Commons Attribution-ShareAlike 4.0 International License</a>.
+          </p>
+
+        </div>
+      </div>
+    </div>
+  </div>
+</footer>
+
+<!-- Statcounter tracking code -->
+  
+<!-- You can add a tracker to track page visits by creating an account at statcounter.com -->
+
+    <!-- End of Statcounter Code -->
+
+  </body>
+  </html>
