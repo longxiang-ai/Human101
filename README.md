@@ -1,4 +1,5 @@
 # Human101: Training 100+FPS Human Gaussians in 100s from 1 View
+[Mingwei Li](https://github.com/longxiang-ai), [Jiachen Tao](https://github.com/tlxhlll), [Zongxin Yang](https://z-x-yang.github.io), [Yi Yang](https://scholar.google.com/citations?user=RMSuNFwAAAAJ)
 
 [[Project Page](https://tlxhlll.github.io/Human101-projectpage/)] [[Arxiv](https://arxiv.org/abs/2312.15258)] [[Supplementary Material](https://arxiv.org/abs/2312.15258)]
 
