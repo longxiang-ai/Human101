@@ -1,7 +1,8 @@
 # Human101: Training 100+FPS Human Gaussians in 100s from 1 View
+
 [Mingwei Li](https://github.com/longxiang-ai), [Jiachen Tao](https://github.com/tlxhlll), [Zongxin Yang](https://z-x-yang.github.io), [Yi Yang](https://scholar.google.com/citations?user=RMSuNFwAAAAJ)
 
-[[Project Page](https://tlxhlll.github.io/Human101-projectpage/)] [[Arxiv](https://arxiv.org/abs/2312.15258)] [[Supplementary Material](https://arxiv.org/abs/2312.15258)]
+[[Project Page](https://longxiang-ai.github.io/Human101/)] [[Arxiv](https://arxiv.org/abs/2312.15258)] [[Supplementary Material](https://arxiv.org/abs/2312.15258)]
 
 This is the official implementation of "Human101: Training 100+FPS Human Gaussians in 100s from 1 View".
 ![pipeline](./assets/pipeline.png)
@@ -12,7 +13,7 @@ Reconstructing the human body from single-view videos plays a pivotal role in th
 
 ## News
 
-- [2023/12/27] We release paper on [arXiv](https://arxiv.org/abs/2312.15258) and the [project page](https://tlxhlll.github.io/Human101-projectpage/).
+- [2023/12/27] We release paper on [arXiv](https://arxiv.org/abs/2312.15258) and the [project page](https://longxiang-ai.github.io/Human101/).
 
 ## TODO list
 
@@ -27,6 +28,7 @@ and the following open-source projects:
 - [ECON](https://github.com/YuliangXiu/ECON)
 - [GTA](https://github.com/River-Zhang/GTA)
 - [EasyMoCap](https://github.com/zju3dv/EasyMocap/)
+- [DreamGaussian](https://github.com/dreamgaussian/dreamgaussian)
 
 And many thanks to the authors of [GTA](https://github.com/River-Zhang/GTA) and [TransHuman](https://github.com/pansanity666/TransHuman) for discussing some details about the implementation.
 
