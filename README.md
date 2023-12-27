@@ -1,10 +1,20 @@
-# Human101: Training 100+FPS Human Gaussians in 100s from 1 View
+<div align="center">
 
-[Mingwei Li](https://github.com/longxiang-ai), [Jiachen Tao](https://github.com/tlxhlll), [Zongxin Yang](https://z-x-yang.github.io), [Yi Yang](https://scholar.google.com/citations?user=RMSuNFwAAAAJ)
+# <b>Human101</b>: Training 100+FPS Human Gaussians in 100s from 1 View
 
-[[Project Page](https://longxiang-ai.github.io/Human101/)] [[Arxiv](https://arxiv.org/abs/2312.15258)] [[Supplementary Material](https://arxiv.org/abs/2312.15258)]
+[Mingwei Li](https://github.com/longxiang-ai), [Jiachen Tao](https://github.com/tlxhlll), [Zongxin Yang](https://z-x-yang.github.io), [Yi Yang](https://scholar.google.com/citations?user=RMSuNFwAAAAJ)<sup>\*</sup>
 
-This is the official implementation of "Human101: Training 100+FPS Human Gaussians in 100s from 1 View".
+<sup>\*</sup>Corresponding author
+
+ReLER, CCAI, Zhejiang University
+
+[[Project Page](https://longxiang-ai.github.io/Human101/)] [[ArXiv](https://arxiv.org/abs/2312.15258)] [[Supplementary Material](https://arxiv.org/abs/2312.15258)]
+
+</div>
+
+## Introduction
+
+We propose **Human101**, a fast 1-view human reconstruction framework. Human101 is able to train 3D Gaussians in 100 seconds and render 1024-resolution images at 60+ FPS, **without necessitating the pre-storage of per-frame Gaussian attributes**. The pipeline of Human101 is shown as follows:
 ![pipeline](./assets/pipeline.png)
 
 ## Abstract
@@ -36,7 +46,7 @@ More related papers about 3D avatars: [Awesome-3D-Avatars](https://github.com/pa
 
 ## Citation
 
-Bibtex:
+If you find this code useful for your research, please consider citing:
 
 ```bibtex
 @misc{li2023human101,
